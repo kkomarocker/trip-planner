@@ -10,5 +10,11 @@ const map = new mapboxgl.Map({
   style: "mapbox://styles/mapbox/streets-v10"
 });
 
-const marker = buildmarker("restaurants", [-74.009151, 40.705086])
-marker.addTo(map);
+const restaurant = buildmarker("restaurants", [-74.009151, 40.705086])
+const activity = buildmarker("activities", [-73.9262, 40.8296])
+const hotel = buildmarker("hotels", [-73.9888, 40.7563])
+
+restaurant.addTo(map);
+activity.addTo(map);
+hotel.addTo(map);
+

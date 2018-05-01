@@ -100,7 +100,7 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("const mapboxgl = __webpack_require__(/*! mapbox-gl */ \"./node_modules/mapbox-gl/dist/mapbox-gl.js\");\nconst buildmarker = __webpack_require__(/*! ./marker.js */ \"./src/marker.js\")\n\nmapboxgl.accessToken = 'pk.eyJ1Ijoia2tvbWFyb2NrZXIiLCJhIjoiY2pnbzU4bDBlMDFrZzJ3cGoyNXpnMGlpZSJ9.E97o4pQbF_r_68XY5oZZRg';\n\nconst map = new mapboxgl.Map({\n  container: \"map\",\n  center: [-74.009, 40.705],\n  zoom: 12,\n  style: \"mapbox://styles/mapbox/streets-v10\"\n});\n\nconst marker = buildmarker(\"restaurants\", [-74.009151, 40.705086])\nmarker.addTo(map);\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("const mapboxgl = __webpack_require__(/*! mapbox-gl */ \"./node_modules/mapbox-gl/dist/mapbox-gl.js\");\nconst buildmarker = __webpack_require__(/*! ./marker.js */ \"./src/marker.js\")\n\nmapboxgl.accessToken = 'pk.eyJ1Ijoia2tvbWFyb2NrZXIiLCJhIjoiY2pnbzU4bDBlMDFrZzJ3cGoyNXpnMGlpZSJ9.E97o4pQbF_r_68XY5oZZRg';\n\nconst map = new mapboxgl.Map({\n  container: \"map\",\n  center: [-74.009, 40.705],\n  zoom: 12,\n  style: \"mapbox://styles/mapbox/streets-v10\"\n});\n\nconst restaurant = buildmarker(\"restaurants\", [-74.009151, 40.705086])\nconst activity = buildmarker(\"activities\", [-73.9262, 40.8296])\nconst hotel = buildmarker(\"hotels\", [-73.9888, 40.7563])\n\nrestaurant.addTo(map);\nactivity.addTo(map);\nhotel.addTo(map);\n\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
