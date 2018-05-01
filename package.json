@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/mdfergus/trip-planner/issues"
   },
-  "homepage": "https://github.com/mdfergus/trip-planner#readme"
+  "homepage": "https://github.com/mdfergus/trip-planner#readme",
+  "devDependencies": {
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.1.2"
+  }
 }
